@@ -24,3 +24,9 @@ Console.WriteLine("The area for the circle of radius " + radius + " is " + area)
 Console.WriteLine(Area(1));
 Console.WriteLine(Area(3));
 Console.WriteLine(Area(5));
+
+
+double fahrenheit(double celcius){
+    return celcius * 9/5 + 32;
+}
+Console.WriteLine(fahrenheit(20));
