@@ -30,3 +30,15 @@ double fahrenheit(double celcius){
     return celcius * 9/5 + 32;
 }
 Console.WriteLine(fahrenheit(20));
+
+
+ulong timestamp = 100000000;
+ulong minutes = timestamp/60;
+ulong hours = minutes/60;
+ulong days = hours/24;
+ulong years = days/365;
+Console.WriteLine(years + 1970);
+ulong reaminingdays = days % 365;
+Console.WriteLine(reaminingdays);
+// 3 år og 62 dage
+
