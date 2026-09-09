@@ -13,3 +13,6 @@ Profil nummer 2
 
 - Det virker
 - Hvad sker der hvis man bruger "Pull"
+
+
+- VI prøver igen
