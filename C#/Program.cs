@@ -22,3 +22,5 @@ radius = 1;
 area = Math.PI * radius * radius;
 Console.WriteLine("The area for the circle of radius " + radius + " is " + area);
 Console.WriteLine(Area(1));
+Console.WriteLine(Area(3));
+Console.WriteLine(Area(5));
