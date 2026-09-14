@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Hello, world!");
+﻿/*
+Console.WriteLine("Hello, world!");
 
 string name ="project nummer 1";
 Console.WriteLine(name);
@@ -84,4 +85,53 @@ float f = 3.14159F;
 double d = 3.14159 * 10;
 Console.WriteLine("i = {0} \nl = {1,4} \nf = {2} \nd = {3,6:0.00}", i, l, f, d);
 Console.WriteLine("i = {0} \nl = {1,4} \nf = {2} \nd = {3,6:0.00}", d, l, f, i);
+
+*/
+
+/*
+for (int y=1 ; y<=10 ; y++) {
+    for (int x=1 ; x<=y ; x++) {
+        Console.Write(string.Format("{0,4}", x*y));
+    }
+    Console.WriteLine("");
+}
+*/
+
+
+/*
+// 5.20 Dice
+int dice = 4;
+bool isevenandgreaterthanthree = dice % 2 == 0 && dice > 3;
+Console.WriteLine(isevenandgreaterthanthree);
+
+// 6.3 Christmas Sale
+
+ulong secSinceNewYear = 21816000;
+ulong days = 86400;
+ulong month = days*30;
+float price = 599.95f;
+ulong pastMonth = secSinceNewYear/month;
+ulong reminder = secSinceNewYear%month;
+ulong pastDays = reminder/days;
+Console.WriteLine(pastMonth);
+Console.WriteLine(reminder);
+Console.WriteLine(pastDays);
+
+// er vi i den 12 måned er det jul, hvordan spørger man om det?
+
+ulong christmas = 12;
+if(pastMonth == christmas){
+    Console.WriteLine(price*0.7);
+} else {
+    Console.WriteLine(price);
+}
+
+*/
+
+
+int autumnHolidays = 10;
+int christmasHolidays = 12;
+int sprintHolidays = 4;
+int summerJuly = 7;
+int summerAugust = 8;
 
