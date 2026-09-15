@@ -169,6 +169,7 @@ for (double c = -5.0; c <= 40.0; c += 0.5){
 // 6.9 Areas of circles
 
 // Chapter 7 exercises 
+/*
 class Door {
     public bool open;
     public int height;
@@ -178,6 +179,32 @@ class Door {
 Door door = new Door { open=true , height=200 , width=112 };
 Console.WriteLine(door.height);
 
-door = {"open": True, "height": 200, "width": 112}
+class Color {
+    public byte r;
+    public byte g;
+    public byte b;
+}
 
-print(door["open"])
+Color color = new Color { r = 230 , g = 12, b = 0 };
+Console.WriteLine(Color);
+
+int[] months = new int[12];
+Console.WriteLine(months.Length);
+
+
+int[] months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+for (int i=0 ; i<months.Length ; i++) {
+    Console.WriteLine(i+": "+months[i]);
+}
+
+
+int[] monthsNormal = [31,28,31,30,31,30,31,31,30,31,30,31];
+int[] monthsLeap = [31,29,31,30,31,30,31,31,30,31,30,31];
+
+for (int i=0 ; i<2030 ; i++) {
+    int[] months = (i%4==0 ? monthsLeap : monthsNormal);
+    Console.WriteLine("In year "+i+", February is "+months[1]+" days long");
+}
+*/
+
