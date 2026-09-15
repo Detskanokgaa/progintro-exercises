@@ -128,10 +128,56 @@ if(pastMonth == christmas){
 
 */
 
-
+/*
 int autumnHolidays = 10;
 int christmasHolidays = 12;
-int sprintHolidays = 4;
+int springHolidays = 4;
 int summerJuly = 7;
 int summerAugust = 8;
 
+switch (holidays){
+    case "10":
+    Console.WriteLine("Autumn Holidays");
+    break;
+    case "12":
+    Console.WriteLine("Christmas Holidays");
+    break;
+    case "4":
+    Console.WriteLine("Spring Holidays");
+    break;
+    case "7":
+    Console.WriteLine("Summer July");
+    break;
+    case "8":
+    Console.WriteLine("Summer August");
+    break;
+    default:
+    Console.WriteLine("Hard Work");
+    break;
+}
+*/
+
+/*
+// 6.6 Create a table of matching Celcius and Fahrenheit
+
+for (double c = -5.0; c <= 40.0; c += 0.5){
+    double f = 32 + (9.0/5.0) * c;
+    Console.WriteLine($"{c}  {f}");
+}
+*/
+
+// 6.9 Areas of circles
+
+// Chapter 7 exercises 
+class Door {
+    public bool open;
+    public int height;
+    public int width;
+}
+
+Door door = new Door { open=true , height=200 , width=112 };
+Console.WriteLine(door.height);
+
+door = {"open": True, "height": 200, "width": 112}
+
+print(door["open"])
