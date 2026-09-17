@@ -157,48 +157,17 @@ switch (holidays){
 }
 */
 
-/*
-// 6.6 Create a table of matching Celcius and Fahrenheit
 
+// 6.6 Create a table of matching Celcius and Fahrenheit
+/*
 for (double c = -5.0; c <= 40.0; c += 0.5){
     double f = 32 + (9.0/5.0) * c;
     Console.WriteLine($"{c}  {f}");
 }
 */
-
-// 6.9 Areas of circles
-
 // Chapter 7 exercises 
+
 /*
-class Door {
-    public bool open;
-    public int height;
-    public int width;
-}
-
-Door door = new Door { open=true , height=200 , width=112 };
-Console.WriteLine(door.height);
-
-class Color {
-    public byte r;
-    public byte g;
-    public byte b;
-}
-
-Color color = new Color { r = 230 , g = 12, b = 0 };
-Console.WriteLine(Color);
-
-int[] months = new int[12];
-Console.WriteLine(months.Length);
-
-
-int[] months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
-for (int i=0 ; i<months.Length ; i++) {
-    Console.WriteLine(i+": "+months[i]);
-}
-
-
 int[] monthsNormal = [31,28,31,30,31,30,31,31,30,31,30,31];
 int[] monthsLeap = [31,29,31,30,31,30,31,31,30,31,30,31];
 
@@ -207,4 +176,61 @@ for (int i=0 ; i<2030 ; i++) {
     Console.WriteLine("In year "+i+", February is "+months[1]+" days long");
 }
 */
+
+/*
+//Exercise 6.6
+double[] radius = [1,3,5];
+double area;
+foreach (double radiusLength in radius) {
+    area = Math.PI*radiusLength*radiusLength;
+    Console.WriteLine("The area of the circle with radius {0} is {1:0.00}.",radiusLength, area);
+}
+*/
+/*
+Color magenta = new Color { red=255 , green=0 , blue=255 };
+Console.WriteLine("red="+magenta.red+" green="+magenta.green+" blue="+magenta.blue);
+
+// Darken color
+magenta.red /=2;
+magenta.green /=2;
+magenta.blue /=2;
+Console.WriteLine("red="+magenta.red+" green="+magenta.green+" blue="+magenta.blue);
+
+class Color {
+    public byte red;
+    public byte green;
+    public byte blue;
+   }
+*/
+
+
+/*
+int[] random = [4,12,5,45,7,22,79];
+int noget = 0;
+foreach (int randomLength in random) {
+    if (randomLength>noget){
+        noget = randomLength;
+}
+}
+Console.WriteLine(noget);
+*/
+
+Console.WriteLine( );
+Person person = new Person(1,2);
+
+Console.WriteLine(person);
+//Man bruger understående som en template til at indhente ønsket data fra definitionen over, meget for simplet.
+public struct Person
+{
+    public Person (double x, double y)
+    {
+        X = x;
+        Y = y;
+    }
+
+    public double X { get; }
+    public double Y { get; }
+
+    public override string ToString() => $"({X}, {Y})";
+}
 
